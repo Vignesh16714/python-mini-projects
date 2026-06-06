@@ -1,0 +1,53 @@
+# ============================================
+# DAY 1 — Python Basics
+# ============================================
+
+# 1. DATA TYPES
+name = "Vignesh"
+age = 21
+height = 5.9
+is_student = True
+
+print(type(name))      # str
+print(type(age))       # int
+print(type(height))    # float
+print(type(is_student))# bool
+
+# 2. LISTS
+skills = ["Python", "SQL", "AWS"]
+skills.append("Spark")         # add item
+skills.remove("SQL")           # remove item
+print(skills)
+print(skills[0])               # indexing
+print(skills[-1])              # last item
+
+# 3. DICTIONARIES
+profile = {
+    "name": "Vignesh",
+    "age": 21,
+    "skills": ["Python", "AWS"],
+    "city": "Chennai"
+}
+print(profile["name"])
+print(profile.get("city"))
+profile["goal"] = "Data Engineer"  # add new key
+print(profile)
+
+# 4. LOOPS
+for skill in skills:
+    print(f"I am learning: {skill}")
+
+# while loop
+count = 0
+while count < 3:
+    print(f"Count is: {count}")
+    count += 1
+
+# 5. CONDITIONALS
+score = 85
+if score >= 90:
+    print("Grade: A")
+elif score >= 75:
+    print("Grade: B")
+else:
+    print("Grade: C")
